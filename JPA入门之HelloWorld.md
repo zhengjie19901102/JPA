@@ -16,7 +16,8 @@
 	|---mysql-connector-java-8.0.11.jar
 
 项目结构如图:
-	<img src="img/construct.jpg" alt="项目结构" width="60%"/>
+
+<img src="img/construct.jpg" alt="项目结构" width="60%"/>
 
 实例采用hibernate的JPA实现。
 JPA项目中`persistence.xml`文件必须放在`META-INF`目录下。[整合spring文件后，`persistence.xml`文件可以抽取出来或不需要]
