@@ -155,3 +155,5 @@ Id | 表示该属性对应数据表的主键字段
 GeneratedValue | 配合Id注解使用，表示主键的生成策略[strategy有以下几中选项:AUTO(程序自动选择生成策略)、IDENTITY(MySQL数据库支持，但Oracle不支持)、SEQUENCE(Oracle支持的序列,MySQL不支持)、TABLE(采用第三张表来组合成自增长主键)]
 Column | 在属性的get方法中使用，表示该列对应数据表中的一个字段。该属性有较多属性来支持对应的数据库字段的特性[例如:长度、对应的字段名、唯一约束等等]
 Base | 默认JPA给字段添加的注解，如果没有添加任何注解会自动采用Base注解方案。JPA会自动对应数据表中的列 
+Transient | 表示该字段不持久化至数据库中，也不会在数据表中生成对应的列。
+Temporal | 一般配合Java的Date类型字段使用。生成对应的日期类型几种形式:Date[只有年月日]、TIME[只有时分秒]、TIMESTAMP[时间戳:生成年月日时分秒]
