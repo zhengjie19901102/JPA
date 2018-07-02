@@ -157,6 +157,7 @@
 	|---hibernate-ehcache-4.3.11.Final.jar
 	|---slf4j-api-1.6.1.jar
 
-
 在需要缓存的类上增加`@Cacheable(true)`或`@Cacheable(false)`相关标注，与`persistence`配置文件中的`<shared-cache-mode>`标签的值相呼应。
 
+
+**`默认JPA开启了一级缓存`**
