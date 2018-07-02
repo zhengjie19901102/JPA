@@ -62,7 +62,7 @@ public class WindowsPhone {
 		this.name = name;
 	}
 
-	@JoinColumn(name = "WIN")
+	@JoinColumn(name = "WIN",unique=true)
 	@OneToOne
 	public Windows getWin() {
 		return win;
