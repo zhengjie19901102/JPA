@@ -67,7 +67,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Table(name="CUSTOMER")
+@Table(name="CUSTOMER",schema="xxx")
 @Entity
 public class Customer {
 	//标注ID的则视为主键
@@ -101,6 +101,7 @@ public class Customer {
 ```
 
 这里采用了java的jdk5.0开始支持的annotation注解,使用了JPA元注解。
+**`Table注解中schema属性在MySQL数据库中指定的是另外个数据库。`**
 
 测试代码如下:
 
